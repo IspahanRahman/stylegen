@@ -36,7 +36,6 @@ export default function Login() {
 
       // Redirect based on role
       const user = useAuthStore.getState().user;
-      console.log("Logged in user:", user);
       if (user?.role === "admin") {
         router.push("/admin");
       } else {
