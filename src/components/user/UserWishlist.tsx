@@ -9,6 +9,8 @@ import { Heart, ShoppingCart } from "lucide-react";
 import { useAuthStore } from "@/lib/store/authStore";
 import Skeleton from "@/components/ui/Skeleton";
 
+
+
 export default function UserWishList() {
   const { user } = useAuthStore();
   const items = useWishlistStore((s) => s.items);
